@@ -7,36 +7,6 @@ class ListsController < ApplicationController
     else
         flash[:alert] = "There was an error creating your list."
     end
-    @list = List.new(params[:list])
-    if @list.save
-        flash[:notice] = "Your list was created"
-    else
-        flash[:alert] = "There was an error creating your list."
-    end
-    @list = List.new(params[:list])
-    if @list.save
-        flash[:notice] = "Your list was created"
-    else
-        flash[:alert] = "There was an error creating your list."
-    end
-    @list = List.new(params[:list])
-    if @list.save
-        flash[:notice] = "Your list was created"
-    else
-        flash[:alert] = "There was an error creating your list."
-    end
-    @list = List.new(params[:list])
-    if @list.save
-        flash[:notice] = "Your list was created"
-    else
-        flash[:alert] = "There was an error creating your list."
-    end
-    @list = List.new(params[:list])
-    if @list.save
-        flash[:notice] = "Your list was created"
-    else
-        flash[:alert] = "There was an error creating your list."
-    end
     redirect_to(list_tasks_url(@list))
   end
 
